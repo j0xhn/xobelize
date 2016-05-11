@@ -653,6 +653,7 @@ Wrap Sections
 		background-color: white;
 		max-width: 600px;
 		margin: 0 auto 30px;
+		padding: 5px 0;
 		letter-spacing: 2px;
 	}
 
@@ -696,10 +697,6 @@ Wrap Sections
 	.nav > li {
 		display: inline-block;
 		width: 19.5%;
-	}
-
-	.headerwrap#info h2 {
-		font-size: 2em;
 	}
 }
 
