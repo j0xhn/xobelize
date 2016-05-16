@@ -48,10 +48,12 @@ xmlns:fb="http://www.facebook.com/2008/fbml"><!--formatted-->
   <link rel="stylesheet" href="assets/css/font-awesome.min.css">
   <link href="assets/css/lightbox.css" rel="stylesheet" />
 
+  <!-- <script type="text/javascript" data-untorch-campaign="3439" src="https://untorch.com/js/api.min.js"></script> -->
+  <script type="text/javascript" data-untorch-campaign="3439" src="https://untorch.com/js/untorch.min.js"></script>
 
 
-  <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'> -->
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -63,12 +65,12 @@ xmlns:fb="http://www.facebook.com/2008/fbml"><!--formatted-->
 
 <body data-spy="scroll" data-offset="0" data-target="#theMenu">
 	<!-- Mobile Menu -->
-	<nav class="menu" id="theMenu">
+	<nav class="menu">
 		<div class="menu-wrap">
-			<h1 class="logo"><a href="index.html#home">xo belize</a></h1>
+			<a class='menu-title'>tiny belize</a>
 			<i class="icon-remove menu-close"></i>
 			<a href="#home" class="smoothScroll" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Touch', 'Home']);">Home</a>
-			<a href="#aboutNav" class="smoothScroll" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Touch', 'About']);">LOCATION</a>
+			<a href="#aboutNav" class="smoothScroll" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Touch', 'About']);">ABOUT</a>
 			<a href="#packageNav" class="smoothScroll" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Touch', 'Packages']);">Packages</a>
 			<a href="#faq" class="smoothScroll" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Touch', 'FAQ']);">FAQ</a>
 			<a href="#contact" class="smoothScroll" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Touch', 'Contact']);">Contact</a>
@@ -99,19 +101,11 @@ xmlns:fb="http://www.facebook.com/2008/fbml"><!--formatted-->
 
 	<!-- ========== HEADER SECTION ========== -->
 	<section id="home" name="home"></section>
-	<div class="headerwrap" id='home'>
+	<div class="headerwrap">
 		<div class="container">
-			<h1 id="responsive">XO BELIZE</h1>
-			<h2>Crowdfund an Off-Grid Cabin</h2>
-
-			<!-- ========== VIDEO FOR MOBILE ========== -->
-
-				<div class='video' id='mobileVideo'>
-					<video src="assets/video/Teaser_Short_Apple_Web.mov" width='100%' poster='assets/video/video-poster.jpg' controls onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Video Click']);">
-					  Sorry, looks like your browser doesn't support video playback. Don't worry though, you can <a href="assets/video/IntroVideo.mp4">download it here</a>
-	  				and watch it on your computer.
-					</video>
-				</div>
+			<h1>TINY BELIZE</h1>
+			<h2>Let's buy a tiny house in Belize!</h2>
+      <a href="#aboutNav" class="btn packageBtn" onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Backpacker Package']);">Watch Video</a>
 
 		<!-- ========== END VIDEO ========== -->
 
@@ -126,10 +120,18 @@ xmlns:fb="http://www.facebook.com/2008/fbml"><!--formatted-->
 	<div class="w">
 		<div class="container" id="about">
 			<div class="row">
+        <!-- ========== VIDEO FOR MOBILE ========== -->
+
+        <div class='video' id='mobileVideo'>
+          <video src="assets/video/Teaser_Short_Apple_Web.mov" width='100%' poster='assets/video/video-poster.jpg' controls onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Video Click']);">
+            Sorry, looks like your browser doesn't support video playback. Don't worry though, you can <a href="assets/video/IntroVideo.mp4">download it here</a>
+            and watch it on your computer.
+          </video>
+        </div>
 
 				<div class="col-lg-8 col-lg-offset-2">
 				<h3> A DEBT FEE <bold>OFF&nbsp;GRID&nbsp;CABIN </bold> AIMED AT THOSE WHO WISH TO LIVE SIMPLY, CREATE NEW FRIENDSHIPS,
-					<bold>AND ENJOY</bold> OUR LIMITED TIME TOGETHER HERE ON EARTH. <br><br>WELCOME TO <bold>XO BELIZE</bold>
+					<bold>AND ENJOY</bold> OUR LIMITED TIME TOGETHER HERE ON EARTH. <br><br>WELCOME TO <bold>TINY BELIZE</bold>
 				</h3>
 				</div>
 			</div>
@@ -179,15 +181,12 @@ xmlns:fb="http://www.facebook.com/2008/fbml"><!--formatted-->
 					<img src="assets/img/other/outline-image-3.png">
 					<h4><b>Lifer</b></h4>
 					<h5><em>1 Available</em></h5>
-					<p>You could be king of this castle! Live a naturally simple life at a fraction of the cost. The cabin comes with enough land to lead a completely self-sustainable life if you choose.<br><b>$20,500</b>
+					<p>You could be king of this castle! Live a naturally simple life at a fraction of the cost. The cabin comes with enough land to lead a completely self-sustainable life if you choose. <i>Price is negotiable</i><br><b>$30,500</b>
 					</p>
 					<a href="#subscribeNav" class="btn packageBtn" onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Cabana Package']);"> Learn More </a>
 
 				</div>
 			</div>
-      <!-- <input type="text" data-untorch-element="email" />
-      <button data-untorch-element="submit"></button>
-      <div class="alert-message" data-untorch-element="alert"></div> -->
 		</div><!-- /container -->
 	</div><!-- /g -->
 
@@ -216,7 +215,9 @@ xmlns:fb="http://www.facebook.com/2008/fbml"><!--formatted-->
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
         <h3>REQUEST THE COMPLETE INFORMATION PACKET </h3>
-          <!-- <script type="text/javascript" data-untorch-campaign="3439" src="https://untorch.com/js/untorch.min.js"></script> -->
+        <input type="text" data-untorch-element="email" />
+        <button data-untorch-element="submit"></button>
+        <div class="alert-message" data-untorch-element="alert"></div>
         </div>
       </div>
     </div><!-- /container -->

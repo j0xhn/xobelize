@@ -1,3 +1,65 @@
+body {
+	background-color: #f2f2f2;
+	font-family: "Lato";
+	font-weight: 300;
+	font-size: 16px;
+	color: #555;
+
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Raleway";
+	font-weight: 300;
+	color: #333;
+	padding: 0 3px;
+	text-align: center;
+}
+
+/* Paragraph & Typographic */
+p {
+	line-height: 28px;
+	margin-bottom: 25px;
+}
+
+/* Links */
+a {
+	color: #6998E2;
+	text-decoration: underline;
+	-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-o-transition: color 0.1s ease-in, background 0.1s ease-in;
+	transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+	color: #7b7b7b;
+	text-decoration: none;
+	outline: 0;
+}
+
+a:before,
+a:after {
+	-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-o-transition: color 0.1s ease-in, background 0.1s ease-in;
+	transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
 /*
 *
 #NAV
@@ -41,27 +103,6 @@
 
 
 /* ========End Here ==== */
-
-#infoNav {
-	text-align: center;
-	opacity: .9;
-	background-color: #66B5D7;
-}
-
-#infoNav p {
-	color: black;
-	margin-bottom: -4px;
-}
-
-#info h5 {
-	color: lightgrey;
-}
-
-
-.responsiveMenu{
-	display: none;
-}
-
 
 #aboutNav, #mapNav {
 	height: 50px;
@@ -124,16 +165,16 @@
 }
 .packageBtn{
 	display:inline-block;
-	background-color: #aaf0d1;
-	color: #446053;
+	background-color: #66E066;
+	color: white;
+	font-weight: 700;
 	margin-bottom: 50px;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
 .images {
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto;
+	margin: 0 auto;
 	width: 100%;
 }
 
@@ -141,110 +182,39 @@
 	margin: 5px 5px 5px 5px;
 }
 
-.images iframe{
-	margin: 5px 5px 5px 5px;
+.confirmation-dialog {
+	background-color: blue;
 }
 
-
-
-body {
-	background-color: #f2f2f2;
-	font-family: "Lato";
-	font-weight: 300;
-	font-size: 16px;
-	color: #555;
-
-	-webkit-font-smoothing: antialiased;
-	-webkit-overflow-scrolling: touch;
-}
-
-/* Titles */
-h1, h2, h3, h4, h5, h6 {
-	font-family: "Raleway";
-	font-weight: 300;
-	color: #333;
-	padding: 0 3px;
-	text-align: center;
-}
-
-
-/* Paragraph & Typographic */
-p {
-	line-height: 28px;
-	margin-bottom: 25px;
-}
-
-.centered {
-	text-align: center;
-}
-
-/* Links */
-a {
-	color: #f85c37;
-
-	-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-	-moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-	-ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-	-o-transition: color 0.1s ease-in, background 0.1s ease-in;
-	transition: color 0.1s ease-in, background 0.1s ease-in;
-}
-
-a:hover,
-a:focus {
-	color: #7b7b7b;
-	text-decoration: none;
-	outline: 0;
-}
-
-a:before,
-a:after {
-	-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-	-moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-	-ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-	-o-transition: color 0.1s ease-in, background 0.1s ease-in;
-	transition: color 0.1s ease-in, background 0.1s ease-in;
-}
-
-hr {
-	display: block;
-	height: 1px;
-	border: 0;
-	border-top: 1px solid #ccc;
-	margin: 1em 0;
-	padding: 0;
-}
 
 
 /* ==========================================================================
 Wrap Sections
 ========================================================================== */
 
-
-
 .headerwrap {
-	background: #F2F2F2;
+	background: url(http://3.bp.blogspot.com/--_f_WUBi-KM/VEzUqb0NUhI/AAAAAAAAABs/l2TvvkfeYn0/s1600/neatjungle%2Bcabin%2B3.jpg);
+	background-size: cover;
+	background-position: bottom;
+	text-align: center;
+}
+
+.headerwrap h1, .headerwrap h2 {
+	color: white;
+	text-shadow: 2px 2px 10px black;
 }
 
 .headerwrap h1 {
-	color: rgb(46, 176, 230);
-	font-size: 500%;
+	font-size: 70px;
 	font-weight: 700;
 	letter-spacing: 3px;
-	text-shadow: none;
-
 }
 
 .headerwrap h2 {
-	color: rgb(103, 95, 95);
-	font-size: 15px;
-	font-weight: 100;
+	font-size: 30px;
+	font-weight: 500;
 	letter-spacing: 2px;
-	text-shadow: none;
 	margin: 0 0 20px;
-}
-
-#videoButton {
-	display: none;
 }
 
 .video {
@@ -346,65 +316,6 @@ Wrap Sections
 }
 
 
-/* item Wrap */
-
-#itemwrap {
-	background: url(../img/item-bg.jpg) no-repeat center top;
-	margin-top: 0px;
-	padding-top:70px;
-	text-align:center;
-	background-attachment: relative;
-	background-position: center center;
-	min-height: 500px;
-	width: 100%;
-
-	-webkit-background-size: 100%;
-	-moz-background-size: 100%;
-	-o-background-size: 100%;
-	background-size: 100%;
-
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-
-#itemwrap h1 {
-	margin-top: 40px;
-	color: white;
-	font-size: 100px;
-	font-weight: 700;
-	letter-spacing: 3px;
-}
-
-#itemwrap h2 {
-	color: white;
-	font-size: 50px;
-	font-weight: 100;
-	letter-spacing: 2px;
-}
-
-
-.desc {
-	text-align: left;
-}
-
-.desc-b {
-	border-left: 4px solid #bababa;
-}
-
-.desc-a i {
-	color: #555;
-	padding-right: 8px;
-}
-
-.desc-b i {
-	color: #555;
-	padding-right: 8px;
-}
-
-
-
 /* MENU CONF*/
 
 .menu {
@@ -430,7 +341,7 @@ Wrap Sections
 	height: 100%;
 }
 
-.menu h1.logo a {
+.menu .menu-title {
 	font-family: 'Raleway', Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	font-weight: 800;
@@ -439,6 +350,7 @@ Wrap Sections
 	text-transform: uppercase;
 	color: #ffffff;
 	margin-top: 20px;
+	text-align: left;
 }
 
 .menu h1.logo a:hover {
@@ -563,55 +475,24 @@ Wrap Sections
 }
 
 
-/* BUTTON CONF */
-
-.btn-theme {
-	color: #fff;
-	background-color: #1abc9c;
-	padding-left: 40px;
-	padding-right: 40px;
-	padding-bottom: 10px;
-	padding-top: 10px;
-	font-weight: 700;
-	border-radius: 3px;
-}
-
-.btn-theme:hover {
-	cursor: pointer;
-	color: white;
-	background-color: #16a085;
-
-}
 @media screen and (min-width: 600px) {
 	.headerwrap h2 {
 		font-size: 22px;
 		margin-bottom: 40px;
 	}
-}
-
-
-@media screen and (min-width: 1400px) {
-	.images {
-		width: 1400px;
+	.images#topSpace iframe{
+		margin: 5px 5px -95px 5px;
 	}
 }
-
 
 @media screen and (min-width: 768px) {
-
+	.headerwrap{
+		background: url(http://3.bp.blogspot.com/--_f_WUBi-KM/VEzUqb0NUhI/AAAAAAAAABs/l2TvvkfeYn0/s1600/neatjungle%2Bcabin%2B3.jpg);
+		background-size: cover;
+		background-position: bottom;
+	}
 	.menu{
 		display: none;
-	}
-
-	.responsiveMenu{
-		width: 100%;
-		right: 0;
-		height: 50px;
-		position: fixed;
-		background-color: #383942;
-		color: daeafd;
-		z-index: 1;
-		display: inline-block;
 	}
 
 	.navbar-fixed-top {
@@ -642,11 +523,7 @@ Wrap Sections
 	}
 }
 
-@media (min-width: 650px) {
-	.images#topSpace iframe{
-		margin: 5px 5px -95px 5px;
-	}
-}
+
 
 @media (min-width: 800px) {
 	.headerwrap h1 {
@@ -663,5 +540,10 @@ Wrap Sections
 		width: 33%;
 		float: left;
 		padding: 0 30px;
+	}
+}
+@media screen and (min-width: 1400px) {
+	.images {
+		width: 1400px;
 	}
 }
