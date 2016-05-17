@@ -98,7 +98,26 @@ hr {
 #faq h3 {
 	font-weight: 700;
 }
+/*
+*
+# REQUEST
+*
+*/
+.input-inline {
+	border-radius: 3px;
+	line-height: 34px;
+	outline: none;
+	border: none;
+	padding: 0 10px;
+}
+.input-inline + .button {
+	position: relative;
+	left: -5px;
+	border-radius: 0 3px 3px 0;
+	margin-bottom: 10px;
+}
 
+.alert-message{ color: red;}
 
 
 
@@ -163,7 +182,7 @@ hr {
 	background-color: rgb(245, 132, 122);
 	color: rgb(122, 43, 43);
 }
-.packageBtn{
+.button{
 	display:inline-block;
 	background-color: #66E066;
 	color: white;
@@ -171,6 +190,12 @@ hr {
 	margin-bottom: 50px;
 	text-decoration: none;
 	text-transform: uppercase;
+	vertical-align: top;
+}
+
+.button:active{
+	outline: none;
+	color: white;
 }
 
 .images {
@@ -490,6 +515,15 @@ Wrap Sections
 		background: url(http://3.bp.blogspot.com/--_f_WUBi-KM/VEzUqb0NUhI/AAAAAAAAABs/l2TvvkfeYn0/s1600/neatjungle%2Bcabin%2B3.jpg);
 		background-size: cover;
 		background-position: bottom;
+		min-height: 450px;
+	}
+
+	.headerwrap .container {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
 	}
 	.menu{
 		display: none;
@@ -515,6 +549,7 @@ Wrap Sections
 		display: block;
 		color: #666;
 		text-align: center;
+		text-decoration: none;
 	}
 
 	.nav > li {
