@@ -183,6 +183,7 @@ hr {
 	color: rgb(122, 43, 43);
 }
 .button{
+	margin: 0;
 	display:inline-block;
 	background-color: #66E066;
 	color: white;
@@ -516,6 +517,7 @@ Wrap Sections
 		background-size: cover;
 		background-position: bottom;
 		min-height: 450px;
+		position: relative;
 	}
 
 	.headerwrap .container {
