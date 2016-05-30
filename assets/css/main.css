@@ -123,44 +123,14 @@ hr {
 
 /* ========End Here ==== */
 
-#aboutNav, #mapNav {
-	height: 50px;
-	z-index: -100;
-}
-
-#subscribeNav{ height: 100px; }
-#packageNav {
-	height: 50px;
-}
-
-#map{
-	height: 207;
-}
-
-#faq {
-	padding-bottom: 35px;
-}
-
-#firstFaq {
-	padding-bottom: 0px;
-
-}
-
-.toggleThis{
-	display: none;
-}
-
-#topSpace {
-	margin-top: 50px;
-}
-
-.bottomSpace {
-	margin-bottom: 50px;
-}
-#members h3 {
-	margin-top: 30px;
-}
-
+#aboutNav, #mapNav, #packageNav, #subscribeNav { padding-top: 50px; }
+#map{ height: 207; }
+#faq { padding-bottom: 35px; }
+.firstFaq { padding-bottom: 0px; }
+.toggleThis{ display: none; }
+.topSpace { margin-top: 50px; }
+.bottomSpace { margin-bottom: 50px; }
+#members h3 { margin-top: 30px; }
 #packageText {
 	width: 700px;
 	padding-right: 15px;
@@ -204,15 +174,8 @@ hr {
 	width: 100%;
 }
 
-.images a img{
-	margin: 5px 5px 5px 5px;
-}
-
-.confirmation-dialog {
-	background-color: blue;
-}
-
-
+.images a img{ margin: 5px 5px 5px 5px; }
+.confirmation-dialog { background-color: blue; }
 
 /* ==========================================================================
 Wrap Sections
@@ -296,7 +259,7 @@ Wrap Sections
 }
 
 /* Blue Wrap */
-#bl {
+.bl {
 	background: #66B5D7;
 	padding-top: 35px;
 	padding-bottom: 60px;
@@ -304,13 +267,13 @@ Wrap Sections
 
 }
 
-#bl h3 {
+.bl h3 {
 	color: white;
 }
 
 /* Footer Wrap */
 
-#f {
+.f {
 	background: #2f2f2f;
 	padding-top: 70px;
 	padding-bottom: 70px;
@@ -318,11 +281,11 @@ Wrap Sections
 
 }
 
-#f h3 {
+.f h3 {
 	color: white;
 }
 
-#f i {
+.f i {
 	font-size: 26px;
 	color: white;
 	padding-left: 10px;
@@ -331,13 +294,13 @@ Wrap Sections
 
 /* Copyright Wrap */
 
-#c {
+.c {
 	background: #222222;
 	padding-top: 15px;
 	text-align: center;
 }
 
-#c p {
+.c p {
 	color: white
 }
 
@@ -397,6 +360,7 @@ Wrap Sections
 	line-height: 40px;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
+	text-decoration: none;
 }
 
 .menu a:hover {
@@ -469,7 +433,7 @@ Wrap Sections
 	transition: all .3s ease;
 }
 
-#menuToggle {
+.menuToggle {
 	position: absolute;
 	top: 20px;
 	left: 0;
@@ -490,7 +454,7 @@ Wrap Sections
 	transition: all .1s ease-in-out;
 }
 
-#menuToggle:hover {
+.menuToggle:hover {
 	color: #ffffff;
 	background: rgba(0,0,0,0.2);
 	-webkit-transition: all .1s ease-in-out;
@@ -506,12 +470,13 @@ Wrap Sections
 		font-size: 22px;
 		margin-bottom: 40px;
 	}
-	.images#topSpace iframe{
+	.images.topSpace iframe{
 		margin: 5px 5px -95px 5px;
 	}
 }
 
 @media screen and (min-width: 768px) {
+	#subscribeNav{ padding-top: 100px; }
 	.headerwrap{
 		background: url(http://3.bp.blogspot.com/--_f_WUBi-KM/VEzUqb0NUhI/AAAAAAAAABs/l2TvvkfeYn0/s1600/neatjungle%2Bcabin%2B3.jpg);
 		background-size: cover;

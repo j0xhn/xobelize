@@ -1,7 +1,7 @@
 ;(function(){
 
 			// Menu settings
-			$('#menuToggle, .menu-close').on('click', function(){
+			$('.menuToggle, .menu-close').on('click', function(){
 				$('.menu').toggleClass('menu-open');
 			});
 
