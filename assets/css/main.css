@@ -164,7 +164,7 @@ hr {
 	vertical-align: top;
 }
 
-.button:active{
+.button:active, .button:hover {
 	outline: none;
 	color: white;
 }
